@@ -1,0 +1,268 @@
+*{
+   margin: 0;
+   padding: 0; 
+}
+body{
+   background-color: black; 
+}
+header{
+ background-color: aliceblue; 
+ width: 100%;
+ position: fixed;
+ z-index: 9999; 
+ display: flex; 
+ justify-content: space-between;
+ align-items: center;
+}
+
+h2{
+    color: rgb(51, 51, 171);
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+}
+.links a{
+color:rgb(51, 51, 171); 
+font-size: 20px;
+padding: 20px;
+text-decoration: none;
+}
+.links a:hover{
+  color:rgb(72, 18, 18);  
+}
+.typing {
+  font-size: 40px;
+  color: #007bff;
+  text-align: center;
+  margin: 100px auto 20px;
+  position: relative;
+  font-family: monospace;
+  min-height: 60px; 
+}
+
+
+.typing::before {
+  content: " ";
+  color: #007bff;
+  font-size: 25px;
+  animation-name: round;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: steps(1, end);
+  white-space: nowrap;
+}
+@keyframes round {
+  0%   { content: "we|"; }
+  10%  { content: "wel|"; }
+  20%  { content: "welc|"; }
+  30%  { content: "welco|"; }
+  40%  { content: "welcom|"; }
+  50%  { content: "welcome|"; }
+  60%  { content: "welcome to|"; }
+  70%  { content: "welcome to my|"; }
+  80%  { content: "welcome to my pr|"; }
+  90%  { content: "welcome to my project|"; }
+  100% { content: "welcome to my project ..|"; }
+}
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+span{
+   color: aliceblue;
+    font-size: 55px;
+}
+.page-home {
+ color:rgb(25, 144, 184); 
+    font-size: 55px;
+}
+.skills {
+  padding: 40px 20px;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+.skills h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: black;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.skill-card {
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.skill-card:hover {
+  transform: scale(1.05);
+}
+.skill-card i {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.skill-card p {
+  font-size: 50px;
+  font-weight: bold;
+  color:black;
+}
+.projects {
+  padding: 40px 20px;
+  background-color:black;
+  text-align: center;
+}
+.projects h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: white;
+}
+.get-hub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.hub {
+  background-color:wheat;
+  padding: 20px;
+  border-radius: 15px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.hu:hover {
+  transform: scale(1.05);
+}
+.hub i {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.hub p {
+  font-size: 50px;
+  font-weight: bold;
+  color:black;
+}
+.hub a button{
+  width: 120px;
+  height: 60px;
+  padding: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+.contact{
+  padding: 40px 20px;
+  background-color:black;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color:white;
+}
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.cont i {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.cont2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.cont2 i{
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.cont2 p {
+  font-size: 50px;
+  font-weight: bold;
+  color:white;
+}
+
+
+@media (max-width: 768px) {
+  h2, .projects h2, .contact h2 {
+    font-size: 30px;
+  }
+
+  .page-home,
+  span {
+    font-size: 30px;
+  }
+
+  .skill-card,
+  .hub {
+    width: 90%;
+    height: auto;
+  }
+
+  img {
+    width: 90%;
+    height: auto;
+  }
+
+  .skill-card p,
+  .hub p,
+  .cont2 p {
+    font-size: 24px;
+  }
+
+  .hub a button {
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .links a {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+ 
